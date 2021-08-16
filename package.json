@@ -1,0 +1,20 @@
+{
+  "name": "bot-adkhar",
+  "version": "1.0.0",
+  "description": "bot adkhar whatsapp",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "figlet": "^1.5.0",
+    "fs-extra": "^10.0.0",
+    "mime-types": "^2.1.32",
+    "moment": "^2.29.1",
+    "puppeteer": "^10.2.0",
+    "sharp": "^0.28.3",
+    "venom-bot": "^3.0.21"
+  },
+  "author": "ryan almalki",
+  "license": "ISC"
+}
