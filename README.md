@@ -10,7 +10,7 @@
 ##### روبوت يرسل الأذكار والصور و الفيديو تلقائيًا كل ساعة لجميع الدردشات
 
 <p align="center">
-  <a href="https://orkestral.github.io/venom">• شكراً venom</a>
+  <a href="https://github.com/orkestral/venom">• شكراً venom</a>
 </p>
 
 #####
