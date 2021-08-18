@@ -4,6 +4,8 @@ const txtt = require('./lib/txtt.js');
 const adk = require('./lib/adk.js');
 const photo = require('./lib/photo.js');
 const videox = require('./lib/video.js');
+const sticker = require('./sticker.js');
+
 module.exports = menu = async (client, message) => {
 
     try {
@@ -60,6 +62,13 @@ module.exports = menu = async (client, message) => {
              else if (txt === "فيديو" || txt == "6"){
                 let listvideo = videox[Math.floor(Math.random() * videox.length)]
                 await client.sendFile(from,listvideo, 'video.mp4', ' ­ ')
+                .then((result) => { console.log('Result: ', result); })
+                .catch((error) => { console.error('Error when sending: ', error); });
+               }
+        
+             else if (txt === "ملصق" || txt == "7"){
+                let liststicker = sticker[Math.floor(Math.random() * sticker.length)]
+                await client.sendImageAsSticker(from,liststicker)
                 .then((result) => { console.log('Result: ', result); })
                 .catch((error) => { console.error('Error when sending: ', error); });
                }
