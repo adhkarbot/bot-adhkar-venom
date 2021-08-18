@@ -4,7 +4,7 @@ const txtt = require('./lib/txtt.js');
 const adk = require('./lib/adk.js');
 const photo = require('./lib/photo.js');
 const videox = require('./lib/video.js');
-const sticker = require('./sticker.js');
+const sticker = require('./lib/sticker.js');
 
 module.exports = menu = async (client, message) => {
 
