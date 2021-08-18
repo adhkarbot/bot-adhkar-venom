@@ -6,8 +6,8 @@
 
 
 #  Bot Adkhar WhatsApp || بوت أذكار للواتساب
-##### A bot that sends adhkar and photos and video automatically every hour to all your chats
-##### روبوت يرسل الأذكار والصور و الفيديو تلقائيًا كل ساعة لجميع الدردشات
+##### A bot that sends adhkar and photos and video and sticker automatically every hour to all your chats
+##### روبوت يرسل الأذكار والصور و الفيديو و الملصقات تلقائيًا كل ساعة لجميع الدردشات
 
 <p align="center">
   <a href="https://github.com/orkestral/venom">• شكراً venom</a>
@@ -69,6 +69,7 @@
 |       ✅        | قرآن كريم                             |
 |       ✅        | صور                                  |
 |       ✅        | فيديو                                |
+|       ✅        | ملصق                                |
 |       ✅        | بث صور او فيديو لجميع القروبات |
 |       ✅        | إرسال تلقائ للاذكار                   |
 
