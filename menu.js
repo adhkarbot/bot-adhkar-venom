@@ -23,6 +23,7 @@ module.exports = menu = async (client, message) => {
         const isOwner = owner.includes(sender.id);
         const g2 = message.body.trim().split(/ +/).slice(1);
         const gs = message.body.split(' ');
+        const q = g2.join(" ")
         const quotedMsgObj = message.quotedMsgObj;
         const isMedia = message.isMedia;  
         const mimetype = message.mimetype;
