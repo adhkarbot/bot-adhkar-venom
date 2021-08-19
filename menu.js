@@ -5,6 +5,7 @@ const adk = require('./lib/adk.js');
 const photo = require('./lib/photo.js');
 const videox = require('./lib/video.js');
 const sticker = require('./lib/sticker.js');
+const tts = require('node-gtts')('ar');
 
 module.exports = menu = async (client, message) => {
 
@@ -72,6 +73,24 @@ module.exports = menu = async (client, message) => {
                 .then((result) => { console.log('Result: ', result); })
                 .catch((error) => { console.error('Error when sending: ', error); });
                }
+        
+             else if (comn === "صوت"){
+
+                const speech = q.substring(q.indexOf('|') + 1)
+                try {
+                    tts.save(`${from}.mp3`, speech, async () => {
+                        await client.sendVoice(from, `${from}.mp3`)
+                        .then((result) => { console.log('Result: ', result); })
+                        .catch((error) => { console.error('Error when sending: ', error); });
+                        fs.unlinkSync(`${from}.mp3`)
+                    })
+                } catch (err) {
+                    console.error(err)
+                    await client.reply(from, 'Error!', id)
+                }
+
+                
+            }
 
 
             else if (comn === "بث") {
