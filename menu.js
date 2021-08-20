@@ -46,29 +46,36 @@ module.exports = menu = async (client, message) => {
                  .catch((erro) => { console.error('Error when sending: ', erro); });
                 
              }
+        
+             else if (txt === "أذكار النوم" || txt === "اذكار النوم" || txt == "4") {
+                await client.sendText(from, txtt.t4)
+                .then((result) => { console.log('Result: ', result); })
+                 .catch((erro) => { console.error('Error when sending: ', erro); });
+                
+             }
 
-             else if (txt === "اذكار" || txt === "ذكر" || txt === "4"){
+             else if (txt === "اذكار" || txt === "ذكر" || txt === "5"){
                 let listadk = adk[Math.floor(Math.random() * adk.length)]
                 client.reply(from, listadk, id.toString())
                 .then((result) => { console.log('Result: ', result); })
                 .catch((error) => { console.error('Error when sending: ', error); });
                }
             
-             else if (txt === "صور" || txt === "صور عشوائية" || txt === "5"){
+             else if (txt === "صور" || txt === "صور عشوائية" || txt === "6"){
                 let listphoto = photo[Math.floor(Math.random() * photo.length)]
                 await client.sendFile(from,listphoto, 'photo.jpeg', ' ­ ')
                 .then((result) => { console.log('Result: ', result); })
                 .catch((error) => { console.error('Error when sending: ', error); });
                }
             
-             else if (txt === "فيديو" || txt == "6"){
+             else if (txt === "فيديو" || txt == "7"){
                 let listvideo = videox[Math.floor(Math.random() * videox.length)]
                 await client.sendFile(from,listvideo, 'video.mp4', ' ­ ')
                 .then((result) => { console.log('Result: ', result); })
                 .catch((error) => { console.error('Error when sending: ', error); });
                }
         
-             else if (txt === "ملصق" || txt == "7"){
+             else if (txt === "ملصق" || txt == "8"){
                 let liststicker = sticker[Math.floor(Math.random() * sticker.length)]
                 await client.sendImageAsSticker(from,liststicker)
                 .then((result) => { console.log('Result: ', result); })
@@ -87,7 +94,7 @@ module.exports = menu = async (client, message) => {
                     })
                 } catch (err) {
                     console.error(err)
-                    await client.reply(from, 'Error!', id)
+                    await client.reply(from, 'من فضلك قم بكتابة كلمة صوت ثم النص الذي تريد تحويله الى صوت', id)
                 }
 
                 
