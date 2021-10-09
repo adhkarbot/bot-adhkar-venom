@@ -9,7 +9,7 @@
   "dependencies": {
     "figlet": "1.5.2",
     "fs-extra": "10.0.0",
-    "mime-types": "2.1.32",
+    "mime-types": "2.1.33",
     "moment": "2.29.1",
     "puppeteer": "10.4.0",
     "sharp": "0.29.1",
