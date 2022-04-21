@@ -13,7 +13,7 @@
     "moment": "2.29.2",
     "puppeteer": "13.6.0",
     "sharp": "0.30.3",
-    "venom-bot": "4.0.9",
+    "venom-bot": "4.0.10",
     "node-gtts": "2.0.2"
   },
   "author": "ryan almalki",
