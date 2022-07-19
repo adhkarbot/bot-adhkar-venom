@@ -11,7 +11,7 @@
     "fs-extra": "10.1.0",
     "mime-types": "2.1.35",
     "moment": "2.29.3",
-    "puppeteer": "13.6.0",
+    "puppeteer": "15.0.0",
     "sharp": "0.30.4",
     "venom-bot": "4.2.0",
     "node-gtts": "2.0.2"
